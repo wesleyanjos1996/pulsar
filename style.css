@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+.pulse {
+    background: none;
+    color: #ff760c;
+    border: 2px solid;
+    padding: 15px 40px;
+    transition: .5s;
+    margin: 50px;
+    border-radius: 5px;
+}
+
+.pulse:hover, .pulse:focus {
+    color: #fff;
+    border-color: #ef8f6e;
+    cursor: pointer;
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #ef8f6e;
+    }
+}
